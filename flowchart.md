@@ -27,7 +27,7 @@ flowchart TD
     %% Ingestion & Event-Driven Alert
     N --> O[Python Consumer: Micro-Batching 5s & State Retention]
     O --> P{Status Berubah dari<br>Terisi ke Kosong?}
-    
+
     P -- Ya --> Q[Kirim Alert Housekeeping<br>via Bot Telegram]
     P -- Tidak --> R[Tulis Snapshot Data Lengkap ke InfluxDB]
     Q --> R
