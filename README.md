@@ -13,7 +13,7 @@
 
 Sistem Smart Hotel IoT & Monitoring System dirancang untuk menjawab dua isu utama operasional perhotelan: pemborosan konsumsi energi listrik dan inefisiensi alur kerja *housekeeping* akibat **False Make Up Room (False MUR)**.
 
-Sistem mengadopsi pendekatan **Edge Computing** menggunakan mikrokontroler ESP32 yang menjalankan algoritma *Finite State Machine* (FSM) secara lokal. Status hunian divalidasi mandiri di tingkat kamar tanpa ketergantungan latensi server, memungkinkan aktuasi pemutus daya relay bekerja instan. Data telemetri kemudian dikirimkan melalui jaringan mesh privat terenkripsi menuju klaster server K3s untuk kebutuhan *micro-batching* database *time-series*, notifikasi otomatis via Telegram Bot, serta komputasi analitik batch menggunakan Apache Spark.
+Perangkat IoT diujicobakan dengan MCU ESP32 yang menerapkan pendekatan edge computing, di mana setiap kamar memiliki algoritma FSM (Finite State Machine) sendiri untuk memvalidasi status okupansi. Aktuator pemutus daya dapat langsung bekerja tanpa perlu menunggu proses validasi dari server. Melalui komunikasi mesh privat yang terenkripsi, data okupansi dikirim ke klaster K3s untuk diproses menjadi micro-batching data time-series, mengirim notifikasi otomatis melalui bot Telegram, serta menjalankan komputasi batch menggunakan Apache Spark.
 
 **Video Pengujian:** [YouTube - Demo Praktikum Smart Hotel IoT](https://youtu.be/qs51M9IOZFo)
 
