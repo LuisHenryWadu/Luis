@@ -15,7 +15,7 @@ Sistem Smart Hotel IoT & Monitoring System dirancang untuk menjawab dua isu utam
 
 Sistem mengadopsi pendekatan **Edge Computing** menggunakan mikrokontroler ESP32 yang menjalankan algoritma *Finite State Machine* (FSM) secara lokal. Status hunian divalidasi mandiri di tingkat kamar tanpa ketergantungan latensi server, memungkinkan aktuasi pemutus daya relay bekerja instan. Data telemetri kemudian dikirimkan melalui jaringan mesh privat terenkripsi menuju klaster server K3s untuk kebutuhan *micro-batching* database *time-series*, notifikasi otomatis via Telegram Bot, serta komputasi analitik batch menggunakan Apache Spark.
 
-📹 **Tautan Video Pengujian:** [YouTube - Demo Praktikum Smart Hotel IoT](https://youtu.be/qs51M9IOZFo)[cite: 3]
+**Video Pengujian:** [YouTube - Demo Praktikum Smart Hotel IoT](https://youtu.be/qs51M9IOZFo)[cite: 3]
 
 ---
 
