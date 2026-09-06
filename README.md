@@ -19,7 +19,7 @@ flowchart TD
     D --> I
     G --> I
 
-    I --> J[ESP8266 Publish Data via Wi-Fi]
+    I --> J[ESP32 Publish Data via Wi-Fi]
     J --> K{Mosquitto MQTT Broker}
     K --> L[Apache Spark: Filter & Analisis Big Data]
     L --> M[(InfluxDB: Simpan Time-Series)]
